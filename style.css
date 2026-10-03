@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+#reiniciar {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* El tablero es una cuadrícula; el número de columnas lo pone JavaScript */
+#tablero {
+  display: grid;
+  gap: 2px;
+  justify-content: center;
+}
+
+.celda {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  background: #bbb;
+  border: 2px outset #eee;
+  cursor: pointer;
+  user-select: none;
+}
+
+.celda.abierta {
+  background: #e8e8e8;
+  border: 1px solid #aaa;
+  cursor: default;
+}
+
+.celda.mina { background: #f66; }
+
+/* Un color distinto para cada número */
+.n1 { color: blue; }
+.n2 { color: green; }
+.n3 { color: red; }
+.n4 { color: navy; }
+.n5 { color: maroon; }
+.n6 { color: teal; }
+.n7 { color: black; }
+.n8 { color: gray; }
+
+.ayuda { color: #555; }

@@ -9,13 +9,22 @@
 <body>
   <h1>Buscaminas</h1>
 
+  <div class="dificultades">
+    <button class="dificultad activo" data-nivel="facil">Fácil</button>
+    <button class="dificultad" data-nivel="medio">Medio</button>
+    <button class="dificultad" data-nivel="dificil">Difícil</button>
+    <button class="dificultad" data-nivel="demencia">Demencia</button>
+  </div>
+
   <div class="panel">
     <span>💣 <span id="minas-restantes">0</span></span>
     <button id="reiniciar">🙂</button>
     <span>⏱️ <span id="tiempo">0</span></span>
   </div>
 
-  <div id="tablero"></div>
+  <div class="contenedor">
+    <div id="tablero"></div>
+  </div>
 
   <p class="ayuda">Clic izquierdo: descubrir · Clic derecho: poner bandera 🚩</p>
 
